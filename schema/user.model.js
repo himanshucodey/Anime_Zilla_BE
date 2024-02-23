@@ -16,18 +16,18 @@ const userSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    watchedMovies: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Movie'
-    }],
-    favoriteMovies: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Movie'
-    }],
-    watchLaterMovies: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Movie'
-    }],
+    // watchedMovies: [{
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Movie'
+    // }],
+    // favoriteMovies: [{
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Movie'
+    // }],
+    // watchLaterMovies: [{
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Movie'
+    // }],
 });
 
 const User = mongoose.model("User", userSchema);
