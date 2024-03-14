@@ -21,6 +21,10 @@ const moviesSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  duration: {
+    type: Number
+  },
+  isMovie: Boolean,
   review: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Review'
